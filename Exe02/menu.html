@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu</title>
+  </head>
+  <body>
+    <header>
+      <img src="Images/logo2-removebg-preview.png" alt="Logo restaurante" />
+      <nav class="search">
+        <ul>
+          <li><a href="index.html">Sobre nós</a></li>
+          <li><a href="menu.html">Cardápio</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Cardápio</h1>
+      <div id="line"></div>
+
+      <section>
+        <article>
+          <header>
+            <h3>Lasagna à Bolonhesa</h3>
+            <p>Preço: R$ 45,00</p>
+          </header>
+          <p>
+            <strong>Ingredientes:</strong> Massa de lasanha, Carne moída, Molho
+            de tomate, Queijo muçarela, Queijo parmesão, Cebola, Alho, Azeite,
+            Manjericão
+          </p>
+        </article>
+      </section>
+
+      <section>
+        <article>
+          <header>
+            <h3>Risoto de Cogumelos</h3>
+            <p>Preço: R$ 50,00</p>
+          </header>
+          <p>
+            <strong>Ingredientes:</strong> Arroz arbóreo, Cogumelos variados
+            (shiitake, paris, portobello), Caldo de legumes, Queijo parmesão,
+            Cebola, Alho, Vinho branco, Manteiga
+          </p>
+        </article>
+      </section>
+
+      <section>
+        <article>
+          <header>
+            <h3>Frango Grelhado com Molho de Limão</h3>
+            <p>Preço: R$ 40,00</p>
+          </header>
+          <p>
+            <strong>Ingredientes:</strong> Peito de frango, Limão, Alho, Azeite,
+            Salsinha, Sal e pimenta, Batatas assadas, Legumes no vapor
+            (brócolis, cenoura)
+          </p>
+        </article>
+      </section>
+
+      <section>
+        <article>
+          <header>
+            <h3>Salmão ao Molho de Maracujá</h3>
+            <p>Preço: R$ 55,00</p>
+          </header>
+          <p>
+            <strong>Ingredientes:</strong> Filé de salmão, Polpa de maracujá,
+            Creme de leite, Cebola, Alho, Azeite, Arroz de coco, Aspargos
+            grelhados
+          </p>
+        </article>
+      </section>
+
+      <section>
+        <article>
+          <header>
+            <h3>Feijoada</h3>
+            <p>Preço: R$ 60,00</p>
+          </header>
+          <p>
+            <strong>Ingredientes:</strong> Feijão preto, Carne seca, Costela de
+            porco, Linguiça calabresa, Bacon, Cebola, Alho, Laranja, Arroz
+            branco, Farofa, Couve refogada
+          </p>
+        </article>
+      </section>
+
+      <section>
+        <article>
+          <header>
+            <h3>Pizza Margherita</h3>
+            <p>Preço: R$ 35,00</p>
+          </header>
+          <p>
+            <strong>Ingredientes:</strong> Massa de pizza, Molho de tomate,
+            Queijo muçarela, Manjericão fresco, Azeite, Sal e pimenta
+          </p>
+        </article>
+      </section>
+    </main>
+  </body>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+      background-image: url("Images/Banner.png");
+      background-size: cover;
+      background-attachment: fixed;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 20px 0;
+      margin-bottom: 20px;
+    }
+
+    header img {
+      height: 200px;
+      border-radius: 100px;
+      padding-bottom: 10px;
+      display: block;
+      margin: auto;
+    }
+
+    ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      margin: auto 0;
+      padding: 10px 0;
+      gap: 20px;
+    }
+
+    nav ul li {
+      border-radius: 10px;
+      display: inline-block;
+      margin-bottom: 10px;
+      margin-right: 10px;
+      border: 2px solid transparent;
+      background-color: #49494931;
+    }
+
+    nav ul li:hover {
+      border-color: rgb(202, 168, 30);
+      box-shadow: 0 0 10px rgba(0, 0, 128, 0.712);
+      transform: scale(1.2);
+    }
+
+    li {
+      padding-left: 15px;
+      padding-right: 5px;
+      font-size: 150%;
+    }
+
+    a {
+      color: black;
+      text-decoration: none;
+    }
+
+    #line {
+      height: 2px;
+      background-color: #000000;
+      margin-top: -20px;
+      margin-bottom: 10px;
+    }
+
+    main {
+      max-width: 800px;
+      padding: 10px;
+    }
+
+    section {
+      margin-bottom: 20px;
+    }
+
+    article {
+      border-radius: 10px;
+      padding: 15px;
+      background-color: #49494931;
+      border: 2px solid rgba(0, 0, 128, 0.712);
+    }
+
+    article header {
+      background-color: rgba(0, 0, 128, 0.712);
+      border-radius: 10px;
+      padding: 10px;
+      color: #fff;
+    }
+
+    article header h3 {
+      margin: 0;
+    }
+
+    article header p {
+      margin: 5px 0;
+    }
+
+    article:hover{
+      box-shadow: 0 0 10px rgb(202, 168, 30);
+      transform: scale(1.02);
+    }
+  </style>
+</html>

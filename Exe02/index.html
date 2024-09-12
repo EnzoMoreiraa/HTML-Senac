@@ -6,12 +6,60 @@
     <title>Sabores Senac</title>
   </head>
   <body>
-    <img src="Images/logo2-removebg-preview.png" alt="Logo restaurante" />
+    <header>
+      <img src="Images/logo2-removebg-preview.png" alt="Logo restaurante" />
+      <nav class="search">
+        <ul>
+          <li><a href="index.html">Sobre nós</a></li>
+          <li><a href="menu.html">Cardápio</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Sobre nós</h1>
+      <div id="line"></div>
+    </main>
+    <div id="us">
+      <p>
+        No Sabores Senac, acreditamos que uma refeição vai muito além de apenas
+        alimentar o corpo; é uma experiência que deve envolver todos os sentidos
+        e criar memórias inesquecíveis. Nosso restaurante nasceu da paixão por
+        unir tradição e inovação, trazendo o melhor da culinária local e
+        internacional para proporcionar a todos os nossos clientes uma jornada
+        gastronômica única. Com ingredientes frescos e selecionados, nossos
+        chefs preparam pratos que valorizam o sabor autêntico e o carinho em
+        cada detalhe.
+      </p>
+      <img
+        id="cuz"
+        src="https://th.bing.com/th/id/OIP.IDSAfeVYga2ebytmmAlx2wHaE8?rs=1&pid=ImgDetMain"
+        alt=""
+      />
+      <p>
+        Nossos valores estão fundamentados na hospitalidade, na qualidade e no
+        respeito a cada cliente que escolhe o Sabores Senac para suas refeições.
+        Acreditamos que o atendimento acolhedor, aliado a um ambiente
+        aconchegante e uma apresentação impecável, faz toda a diferença. Por
+        isso, nossa equipe está sempre pronta para receber cada pessoa com um
+        sorriso e dedicação, garantindo uma experiência agradável e memorável a
+        cada visita.
+      </p>
+      <p>
+        Somos apaixonados pela arte de cozinhar e pelo prazer de servir. Estamos
+        comprometidos em manter uma relação de confiança e proximidade com nossa
+        comunidade, sendo um ponto de encontro onde famílias, amigos e todos os
+        amantes da boa comida podem se reunir para celebrar momentos especiais.
+        Venha descobrir os sabores que temos a oferecer e deixe-se envolver pela
+        magia de uma refeição no Sabores Senac!
+      </p>
+    </div>
+    <div id="space"></div>
   </body>
   <style>
     body {
       display: flex;
-      justify-content: center;
+      flex-direction: column;
+      align-items: center;
       margin: 0;
       padding: 0;
       background-image: url("Images/Banner.png");
@@ -19,10 +67,88 @@
       background-attachment: fixed;
     }
 
-    img {
+    header {
+      margin: 20px 0;
+      margin-bottom: 20px;
+    }
+
+    header img {
       height: 200px;
       border-radius: 100px;
       padding-bottom: 10px;
+      display: block;
+      margin: auto;
+    }
+
+    ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      margin: auto 0;
+      padding: 10px 0;
+      gap: 20px;
+      text-decoration: none;
+    }
+
+    nav ul li {
+      border-radius: 10px;
+      display: inline-block;
+      margin-bottom: 10px;
+      margin-right: 10px;
+      border: 2px solid transparent;
+      background-color: #49494931;
+      text-decoration: none;
+    }
+
+    nav ul li:hover {
+      border-color: rgb(202, 168, 30);
+      box-shadow: 0 0 10px rgba(0, 0, 128, 0.712);
+      transform: scale(1.2);
+    }
+
+    li {
+      padding-left: 15px;
+      padding-right: 5px;
+      font-size: 150%;
+    }
+
+    a {
+      color: black;
+      text-decoration: none;
+    }
+
+    #line {
+      height: 2px;
+      background-color: #000000;
+      margin-top: -20px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      display: flex;
+      justify-content: center;
+      max-width: 700px;
+      text-align: justify;
+      text-indent: 30px;
+      font-size: 110%;
+    }
+
+    div img {
+      display: block;
+      margin: 20px auto;
+      width: 300px;
+      border-radius: 200px;
+    }
+
+    #us {
+        background-color: #49494931;
+        padding: 10px;
+        border-radius: 10px;
+        border: 2px solid rgb(202, 168, 30);
+    }
+
+    #space {
+        height: 50px;
     }
   </style>
 </html>
