@@ -4,10 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sabores Senac</title>
-  </head>
+  </head><img id="logo" src="Images/logo2-removebg-preview.png" alt="Logo restaurante" />
   <body>
     <header>
-      <img src="Images/logo2-removebg-preview.png" alt="Logo restaurante" />
+      
       <nav class="search">
         <ul>
           <li><a href="index.html">Sobre nós</a></li>
@@ -56,6 +56,11 @@
     <div id="space"></div>
   </body>
   <style>
+    * {
+      color: black;
+      font-family: Arial, sans-serif;
+    }
+
     body {
       display: flex;
       flex-direction: column;
@@ -72,7 +77,7 @@
       margin-bottom: 20px;
     }
 
-    header img {
+    #logo {
       height: 200px;
       border-radius: 100px;
       padding-bottom: 10px;
@@ -97,7 +102,6 @@
       margin-right: 10px;
       border: 2px solid transparent;
       background-color: #49494931;
-      text-decoration: none;
     }
 
     nav ul li:hover {
@@ -113,7 +117,6 @@
     }
 
     a {
-      color: black;
       text-decoration: none;
     }
 
@@ -141,14 +144,19 @@
     }
 
     #us {
-        background-color: #49494931;
-        padding: 10px;
-        border-radius: 10px;
-        border: 2px solid rgb(202, 168, 30);
+      background-color: #49494931;
+      padding: 10px;
+      border-radius: 10px;
+      border: 2px solid rgb(202, 168, 30);
     }
 
     #space {
-        height: 50px;
+      height: 50px;
     }
+
+    nav ul li a {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
   </style>
 </html>
