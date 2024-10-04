@@ -1,5 +1,9 @@
 body {
-  background-color: black;
+  margin: 0;
+  padding: 0;
+  background-image: url("Images/Logo1.jpeg");
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 * {
@@ -30,4 +34,5 @@ body {
 .title{
     display: flex;
     justify-content: center;
+    height: 300px;
 }
