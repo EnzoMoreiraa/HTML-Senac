@@ -1,0 +1,33 @@
+body {
+  background-color: black;
+}
+
+* {
+  color: wheat;
+  font-family: "Ubuntu", sans-serif;
+}
+
+#links {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 20px;
+}
+
+#links a {
+  text-decoration: none;
+  text-align: center;
+  vertical-align: center;
+  padding: 10px;
+}
+
+#links a:hover {
+  box-shadow: 0 0 10px rgb(190, 190, 190);
+  border-radius: 100px;
+  transform: scale(1.2);
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+}
