@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Histórico de Vendas</title>
+    <link rel="stylesheet" href="history.css">
+</head>
+<body>
+    <div class="header">
+        <img src="Images/TrueLogo.png" alt="logo">
+    </div>
+
+    <div id="links">
+        <a href="index.html">Página Inicial</a>
+        <a href="ctrl-estoque.html">Controle de Estoque</a>
+        <a href="add-produto.html">Adicionar Produto</a>
+        <a href="vendas.html">Vendas</a>
+        <a href="history.html">Histórico</a>
+        <a href="funcionarios.html">Funcionários</a>
+    </div>
+
+    <h2>Histórico de Vendas</h2>
+
+    <div class="filter">
+        <label for="filter-date">Filtrar por data:</label>
+        <input type="text" id="filter-date" placeholder="Digite a data por extenso">
+    </div>
+
+    <table class="sales-history">
+        <thead>
+            <tr>
+                <th>Data/Hora</th>
+                <th>Funcionário</th>
+                <th>Valor Total (R$)</th>
+                <th>Forma de Pagamento</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>10/10/2024 - 14:30</td>
+                <td>Cepacol</td>
+                <td>R$ 200,00</td>
+                <td>Cartão</td>
+            </tr>
+            <tr>
+                <td>09/10/2024 - 16:15</td>
+                <td>Cariri Sliced</td>
+                <td>R$ 150,00</td>
+                <td>Dinheiro</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

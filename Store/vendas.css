@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Ubuntu", sans-serif;
+  background-image: url("Images/bg.jpeg");
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+}
+
+.header {
+  background-color: #b62525;
+  text-align: center;
+}
+
+.header img {
+  height: 200px;
+}
+
+#links {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 20px;
+}
+
+#links a {
+  text-decoration: none;
+  text-align: center;
+  padding: 10px;
+  background-color: rgba(228, 46, 46, 0.8);
+  border-radius: 50px;
+  color: white;
+}
+
+#links a:hover {
+  background-color: rgba(228, 46, 46, 1);
+  transform: scale(1.1);
+}
+
+h2 {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.venda-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product-list {
+  margin: 10px;
+}
+
+.product-list label {
+  margin-right: 10px;
+}
+
+.payment-options {
+  margin: 20px 0;
+}
+
+.form-submit button {
+  padding: 10px 20px;
+  background-color: #b62525;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.form-submit button:hover {
+  background-color: #e83e3e;
+}

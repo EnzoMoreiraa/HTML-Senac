@@ -5,50 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Adicionar Produto</title>
+    <link rel="stylesheet" href="add.css">
 </head>
 <body>
-    <div>
-        <p>Nome da lojinha</p>
+    <div class="header">
+        <img src="Images/TrueLogo.png" alt="logo">
     </div>
     
-    <div>
-        <a href="">Página Inicial</a>
-        <a href="">Controle de Estoque</a>
-        <a href="">Adicionar Produto</a>
-        <a href="">Funcionários</a>
+    <div id="links">
+        <a href="index.html">Página Inicial</a>
+        <a href="ctrl-estoque.html">Controle de Estoque</a>
+        <a href="add-produto.html">Adicionar Produto</a>
+        <a href="vendas.html">Vendas</a>
+        <a href="history.html">Histórico</a>
+        <a href="funcionarios.html">Funcionários</a>
     </div>
 
-    
     <h2>Adicionar Produto</h2>
-    <form action="">
-        <div>
-            <label for="link-foto">Link para foto: </label>
-            <input type="url" id="link-foto" name="link-foto">
+
+    <form action="" method="post">
+        <div class="form-group">
+            <label for="link-foto">Link para foto:</label>
+            <input type="url" id="link-foto" name="link-foto" placeholder="Insira o link da foto" required>
         </div>
         
-        <div>
-            <label for="descricao">Descrição do produto: </label>
-            <!-- Adicione o id apropriado para o input abaixo -->
-            <input type="text" id="" name="descrição">
+        <div class="form-group">
+            <label for="descricao">Descrição do produto:</label>
+            <input type="text" id="descricao" name="descricao" placeholder="Ex: Barra olímpica" required>
         </div>
         
-        <div>
-            <label for="preco">Preço (em R$): </label>
-            <!-- Adicione o id apropriado e o type para receber números abaixo -->
-            <input type="" id="" name="preço">
+        <div class="form-group">
+            <label for="preco">Preço (em R$):</label>
+            <input type="number" id="preco" name="preco" min="0" step="0.01" placeholder="Insira o preço" required>
         </div>
         
-        <div>
-            <!-- Preencha as propriedades necessárias para os elementos abaixo -->
-            <label>Quantidade disponível: </label>
-            <input>
+        <div class="form-group">
+            <label for="quantidade">Quantidade disponível:</label>
+            <input type="number" id="quantidade" name="quantidade" min="1" placeholder="Insira a quantidade" required>
         </div>
 
         <div class="form-add">
-            <!-- Adicione ao type do botão abaixo o valor para que ele submeta o formulário -->
-            <button type="">Adicionar</button>
+            <button type="submit">Adicionar Produto</button>
         </div>
-
     </form>
 
 </body>
