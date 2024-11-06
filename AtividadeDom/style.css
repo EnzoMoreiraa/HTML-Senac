@@ -224,3 +224,15 @@ body {
     margin-top: 5vh;
     text-align: center;
 }
+
+/* Atividade 06 */
+
+#exe06 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 15px;
+    height: 30vh;
+    margin-top: 20px;
+}

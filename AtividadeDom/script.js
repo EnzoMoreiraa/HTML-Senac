@@ -66,3 +66,5 @@ let tecla = document.querySelector('.tecla')
 document.addEventListener('keydown', (press) => {
     tecla.innerHTML = `Você precionou <br> - ${press.key} -`
 })
+
+/* Atividade 06 */
