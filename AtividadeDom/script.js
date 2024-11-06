@@ -35,7 +35,7 @@ click.addEventListener('click', () => {
 reset.addEventListener('click', () => {
     i = 0
     cc.innerHTML = i
-    
+
 })
 
 /* Atividade 03 */
@@ -56,7 +56,7 @@ let textChanged = document.querySelector('.textChanged')
 change.addEventListener('click', () => {
     let insert = prompt('Insira um texto')
     textChanged.innerHTML = insert
-    
+
 })
 
 /* Atividade 05 */
@@ -68,3 +68,26 @@ document.addEventListener('keydown', (press) => {
 })
 
 /* Atividade 06 */
+
+let exe06 = document.querySelector('#exe06')
+let vote = document.querySelector('.vote')
+let img = document.querySelector('.candidato')
+
+vote.addEventListener('click', () => {
+    let political = prompt(`Insira o número do canditado desejado: \n03 - América \n69 - Pililiu \nOutro - Nulo`)
+    if (political == '03') {
+        img.innerHTML = '<img src="http://www.quickmeme.com/img/80/8024b8038a742abde31a6ee0a1ff425c32b0bb014e78a8db25e0491b8c14b27d.jpg" alt="candidato america">'
+        exe06.style.height = '45vh'
+        vote.style.marginBottom = '5vh'
+    } else if (political == '69') {
+        img.innerHTML = '<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0Z82-SDRuF3G6l7u8uOc8WLlzEerTBAax_g&s" alt="candidato pililiu">'
+        exe06.style.height = '45vh'
+        vote.style.marginBottom = '5vh'
+    } else {
+        img.innerHTML = '<h1>Voto Nulo</h1>'
+        exe06.style.height = '30vh'
+        vote.style.marginBottom = '0'
+    }
+})
+
+/* Desafio */

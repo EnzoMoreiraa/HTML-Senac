@@ -212,7 +212,7 @@ body {
     align-items: center;
     background-color: white;
     border-radius: 15px;
-    height: 30vh;
+    height: 40vh;
     margin-top: 20px;
 }
 
@@ -228,6 +228,38 @@ body {
 /* Atividade 06 */
 
 #exe06 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 15px;
+    height: 30vh;
+    margin-top: 20px;
+}
+
+#exe06 .vote {
+    background-color: blanchedalmond;
+    border-radius: 15px;
+    height: 5vh;
+    width: 10vw;
+}
+
+#exe06 .vote:hover {
+    transform: scale(1.1);
+}
+
+#exe06 .vote:active {
+    transform: scale(1.0);
+}
+
+#exe06 .candidato img {
+    border-radius: 15px;
+    height: 20vh;
+}
+
+/* Desafio */
+
+#desafio {
     display: flex;
     flex-direction: column;
     align-items: center;
