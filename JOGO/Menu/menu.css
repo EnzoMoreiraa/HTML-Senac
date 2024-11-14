@@ -21,7 +21,7 @@ body {
 #menu .title {
   margin-bottom: 10vh;
   color: white;
-  text-shadow: 0 0 5px white;
+  text-shadow: 0 0 2vh white;
 }
 
 #menu .button {
@@ -37,7 +37,7 @@ body {
   transition: transform 0.3s ease;
 }
 
-#menu .button a{
+#menu .button a {
   text-decoration: none;
   color: black;
 }
@@ -48,5 +48,31 @@ body {
 }
 
 #menu .button:active {
-  transform: scale(1.0);
+  transform: scale(1);
+}
+
+#credits {
+  background-color: #534646;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40vw;
+  height: 50vh;
+  padding: 2vh;
+  border-radius: 10px;
+  border: solid 2px white;
+  color: white;
+  text-shadow: 0 0 2vh white;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+#credits.visible {
+  display: flex;
+  opacity: 1;
 }
