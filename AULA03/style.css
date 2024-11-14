@@ -1,0 +1,37 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: blanchedalmond;
+}
+
+.container {
+    position: relative;
+    width: 600px;
+    height: 400px;
+    border: solid black 2px;
+}
+
+.movable, .target{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+}
+
+.movable {
+    background-color: blue;
+    box-shadow: 0 0 10px rgba(0, 0, 128, 0.712);
+    top:5px;
+    left: 5px;
+    border-radius: 100VH;
+}
+
+.target {
+    background-color: red;
+    box-shadow: 0 0 10px rgba(171, 0, 0, 0.712);
+    border-radius: 100vh;
+    top: 150px;
+    left: 250px;
+}

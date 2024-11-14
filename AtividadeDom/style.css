@@ -20,6 +20,7 @@ body {
     background-color: white;
     border-radius: 15px;
     height: 30vh;
+    border: solid black 2px;
 }
 
 #exe01 h1{ 
@@ -96,6 +97,7 @@ body {
     border-radius: 15px;
     height: 30vh;
     margin-top: 20px;
+    border: solid black 2px;
 }
 
 #exe02 h1{
@@ -154,6 +156,7 @@ body {
     border-radius: 15px;
     height: 30vh;
     margin-top: 20px;
+    border: solid black 2px;
 }
 
 #exe03 h1{
@@ -187,6 +190,7 @@ body {
     border-radius: 15px;
     height: 30vh;
     margin-top: 20px;
+    border: solid black 2px;
 }
 
 #exe04 .Change {
@@ -214,6 +218,7 @@ body {
     border-radius: 15px;
     height: 40vh;
     margin-top: 20px;
+    border: solid black 2px;
 }
 
 #exe05 .tecla {
@@ -235,6 +240,7 @@ body {
     border-radius: 15px;
     height: 30vh;
     margin-top: 20px;
+    border: solid black 2px;
 }
 
 #exe06 .vote {
@@ -267,4 +273,5 @@ body {
     border-radius: 15px;
     height: 30vh;
     margin-top: 20px;
+    border: solid black 2px;
 }
