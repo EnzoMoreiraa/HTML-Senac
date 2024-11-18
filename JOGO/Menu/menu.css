@@ -63,16 +63,33 @@ body {
   align-items: center;
   width: 40vw;
   height: 50vh;
-  padding: 2vh;
   border-radius: 10px;
   border: solid 2px white;
   color: white;
-  text-shadow: 0 0 2vh white;
-  opacity: 0;
-  transition: opacity 0.3s ease;
 }
 
 #credits.visible {
   display: flex;
   opacity: 1;
+}
+
+#credits h1 {
+  text-shadow: 0 0 2vh white;
+  margin-bottom: 3vh;
+}
+
+#credits h3 {
+  transition: transform 0.3s ease;
+}
+
+#credits h3 a {
+  text-decoration: none;
+  color: white;
+}
+
+#credits h3:hover {
+  transform: scale(1.2);
+  text-shadow: 0 0 2vh white;
+  cursor: pointer;
+  
 }
