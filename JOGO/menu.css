@@ -52,12 +52,12 @@ body {
 }
 
 #credits {
-  background-color: #534646;
+  background-color: #534646f2;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  display: none;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -66,11 +66,13 @@ body {
   border-radius: 10px;
   border: solid 2px white;
   color: white;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  padding: 3vh;
 }
 
-#credits.visible {
-  display: flex;
-  opacity: 1;
+#credits.hidden {
+  display: none;
 }
 
 #credits h1 {
@@ -80,6 +82,7 @@ body {
 
 #credits h3 {
   transition: transform 0.3s ease;
+  margin-bottom: 1vh;
 }
 
 #credits h3 a {
@@ -91,5 +94,20 @@ body {
   transform: scale(1.2);
   text-shadow: 0 0 2vh white;
   cursor: pointer;
-  
+}
+
+#exit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: #bb0000f2;
+  border: none;
+  font-size: 1.5em;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+#exit:hover {
+  transform: scale(1.1);
 }

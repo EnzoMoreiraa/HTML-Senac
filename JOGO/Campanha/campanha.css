@@ -1,0 +1,23 @@
+/* Configurações gerais */
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  #gameContainer {
+    position: relative;
+  }
+  
+  /* Canvas do jogo */
+  canvas {
+    display: block;
+    background: #222;
+    border: 2px solid white;
+  }
+  
